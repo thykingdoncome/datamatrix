@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import User from '../views/User.vue'
+import NotFound from '../views/NotFound.vue'
 
 
 Vue.use(VueRouter)
@@ -28,6 +29,11 @@ Vue.use(VueRouter)
     path: '/user_home',
     name: 'user_home',
     component: User
+  },
+  {
+    path: '*',
+    name: 'not_found',
+    component: NotFound
   }
 ]
 
