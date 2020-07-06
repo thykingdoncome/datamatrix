@@ -1,5 +1,5 @@
 <template>
-  <div id="user">
+  <div id="user" v-if="firstName !== ''">
     <h2>Hello, {{ firstName }} {{ lastName }}</h2>
 
     <p>Registered at: {{ registered }}</p>
